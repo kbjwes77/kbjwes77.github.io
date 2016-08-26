@@ -28,6 +28,7 @@ body {
 }
 .video-list {
 	width: 25%;
+	height: 480px;
 	float: left;
 	overflow-y: scroll;
 }
