@@ -10,10 +10,17 @@ body {
 .images img {
 	width: 120px;
 	height: 90px;
+	margin: 8px;
+	box-shadow: 4px 4px 8px #bbb;
 }
 .videos video {
+	width: 640px;
+	height: 480px;
+}
+.video-list {
 	width: 320px;
-	height: 240px;
+	height:480p;
+	overflow-y: scroll;
 }
 .nav-table img {
 	width: 128px;
