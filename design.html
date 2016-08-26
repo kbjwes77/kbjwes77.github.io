@@ -10,19 +10,14 @@
 		<meta name="description" content="Gamedev duo making interesting games">
 		<title>kbjwes77 - design</title>
 		
-		<script>
+		<script type="text/javascript">
 			changeSrc function(){
-				/*
 				var video = document.getElementById('video');
-				*/
-				this.innerHTML = "FUCK";
 				
-				/*
 				video.pause();
-				video.setAttribute('src',newid.src);
+				video.setAttribute('src',this.src);
 				video.load();
 				video.play();
-				*/
 				};
 			};
 		</script>
@@ -53,9 +48,9 @@
 			<video id="video" src="/design/videos/1.mp4" type="video/mp4"></video>
 			<div class="video-list">
 				<ul>
-					<li onclick="changeSrc()" src="/design/videos/1.mp4"><p>Cage</p></li>
-					<li onclick="changeSrc()" src="/design/videos/2.mp4"><p>Koi</p></li>
-					<li  onclick="changeSrc()" src="/design/videos/3.mp4"><p>Sin</p></li>
+					<li><a onclick="changeSrc()" src="/design/videos/1.mp4" href="#">Cage</a></li>
+					<li><a onclick="changeSrc()" src="/design/videos/2.mp4" href="#">Koi</a></li>
+					<li><a onclick="changeSrc()" src="/design/videos/3.mp4" href="#">Sin</a></li>
 				</ul>
 			</div>
 		</div>
