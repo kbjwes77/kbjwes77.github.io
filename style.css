@@ -8,8 +8,8 @@ body {
     height: 100%;
 }
 .images {
-	width:50px;
-	float:left;
+	width: 50%;
+	float: left;
 }
 .images img {
 	width: 120px;
@@ -23,11 +23,11 @@ body {
 }
 .videos video {
 	width: 75%;
-	float:left;
+	float: left;
 }
 .video-list {
 	width: 25%;
-	float:left;
+	float: left;
 	overflow-y: scroll;
 }
 .nav-table img {
