@@ -9,6 +9,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Gamedev duo making interesting games">
 		<title>kbjwes77 - design</title>
+		
+		<script>
+			changeSrc = function(){
+				var video = document.getElementById('video');
+				var source = document.createElement('source');
+
+				source.setAttribute('src', 'http://www.tools4movies.com/trailers/1012/Kill%20Bill%20Vol.3.mp4');
+
+				video.appendChild(source);
+				video.play();
+
+				setTimeout(function() {  
+					video.pause();
+
+				   source.setAttribute('src', 'http://www.tools4movies.com/trailers/1012/Despicable%20Me%202.mp4'); 
+
+					video.load();
+					video.play();
+				}, 3000);
+			};
+		</script>
 	</head>
 	
 	<body>
@@ -16,29 +37,29 @@
 		
 		<p>design inspiration</p>
 		<div class="images">
-			<a href="/design/images/1.png"><img src="/design/images/1.png"/></a>
-			<a href="/design/images/2.png"><img src="/design/images/2.png"/></a>
-			<a href="/design/images/3.png"><img src="/design/images/3.png"/></a>
-			<a href="/design/images/4.png"><img src="/design/images/4.png"/></a>
-			<a href="/design/images/5.png"><img src="/design/images/5.png"/></a>
-			<a href="/design/images/6.png"><img src="/design/images/6.png"/></a>
-			<a href="/design/images/7.png"><img src="/design/images/7.png"/></a>
-			<a href="/design/images/8.png"><img src="/design/images/8.png"/></a>
-			<a href="/design/images/9.png"><img src="/design/images/9.png"/></a>
-			<a href="/design/images/10.png"><img src="/design/images/10.png"/></a>
-			<a href="/design/images/11.png"><img src="/design/images/11.png"/></a>
-			<a href="/design/images/12.png"><img src="/design/images/12.png"/></a>
-			<a href="/design/images/13.png"><img src="/design/images/13.png"/></a>
-			<a href="/design/images/14.png"><img src="/design/images/14.png"/></a>
+			<a href="/design/images/1.png" target="_blank"><img src="/design/images/1.png"/></a>
+			<a href="/design/images/2.png" target="_blank"><img src="/design/images/2.png"/></a>
+			<a href="/design/images/3.png" target="_blank"><img src="/design/images/3.png"/></a>
+			<a href="/design/images/4.png" target="_blank"><img src="/design/images/4.png"/></a>
+			<a href="/design/images/5.png" target="_blank"><img src="/design/images/5.png"/></a>
+			<a href="/design/images/6.png" target="_blank"><img src="/design/images/6.png"/></a>
+			<a href="/design/images/7.png" target="_blank"><img src="/design/images/7.png"/></a>
+			<a href="/design/images/8.png" target="_blank"><img src="/design/images/8.png"/></a>
+			<a href="/design/images/9.png" target="_blank"><img src="/design/images/9.png"/></a>
+			<a href="/design/images/10.png" target="_blank"><img src="/design/images/10.png"/></a>
+			<a href="/design/images/11.png" target="_blank"><img src="/design/images/11.png"/></a>
+			<a href="/design/images/12.png" target="_blank"><img src="/design/images/12.png"/></a>
+			<a href="/design/images/13.png" target="_blank"><img src="/design/images/13.png"/></a>
+			<a href="/design/images/14.png" target="_blank"><img src="/design/images/14.png"/></a>
 		</div>
 		
 		<div class="videos">
-			<video src="/design/videos/1.mp4" type="video/mp4"></video>
+			<video id="video" src="/design/videos/1.mp4" type="video/mp4"></video>
 			<div class="video-list">
 				<ul>
-					<li><a src="/design/videos/1.mp4"><p>Cage</p></a></li>
-					<li><a src="/design/videos/2.mp4"><p>Koi</p></a></li>
-					<li><a src="/design/videos/3.mp4"><p>Sin</p></a></li>
+					<li><a onclick="changeSrc()" src="/design/videos/1.mp4" href="#"><p>Cage</p></a></li>
+					<li><a onclick="changeSrc()" src="/design/videos/2.mp4" href="#"><p>Koi</p></a></li>
+					<li><a onclick="changeSrc()" src="/design/videos/3.mp4" href="#"><p>Sin</p></a></li>
 				</ul>
 			</div>
 		</div>

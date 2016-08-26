@@ -23,6 +23,7 @@ body {
 }
 .videos video {
 	width: 75%;
+	height: 480px;
 	float: left;
 }
 .video-list {
