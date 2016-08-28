@@ -47,7 +47,7 @@ h1, h2 {
 	background-color: #13161E;
 	overflow-y: scroll;
 }
-video-list ul {
+.video-list ul {
 	color: #3F4963;
 }
 .nav-table img {
