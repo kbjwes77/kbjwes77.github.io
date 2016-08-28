@@ -6,6 +6,10 @@ html {
 body {
     width: 100%;
     height: 100%;
+	background-color: #1D212D;
+}
+p, h1, h2, h3, h4, h5 {
+	color:#fff;
 }
 .images {
 	width: 50%;
