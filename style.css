@@ -17,7 +17,7 @@ a {
 h1, h2, h3, h4, h5 {
 	background-color: #2E3548;
 }
-.home {
+h1, h2 {
 	padding-left: 8px;
 }
 .images {
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5 {
 	width: 120px;
 	height: 90px;
 	margin: 8px;
-	border: 3px double #222;
+	border: 2px solid #2E3548;
 	box-shadow: 4px 4px 8px #000;
 }
 .videos {
@@ -46,6 +46,9 @@ h1, h2, h3, h4, h5 {
 	float: left;
 	background-color: #13161E;
 	overflow-y: scroll;
+}
+video-list ul {
+	color: #3F4963;
 }
 .nav-table img {
 	width: 128px;
