@@ -62,3 +62,7 @@ h1, h2 {
 .nav-table td {
 	padding: 8px 16px;
 }
+.content, .twitter-feed {
+	width: 50%;
+	float: left;
+}
