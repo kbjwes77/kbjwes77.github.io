@@ -48,5 +48,9 @@
 
         <!-- Run the game code -->
         <script type="text/javascript" src="/gm/verlets/demo/html5game/verletcloth.js?JQMZB=254339536"></script>
+		<script type="text/javascript">
+			document.getElementById("canvas").onwheel = function(event) {event.preventDefault();};
+			document.getElementById("canvas").onmousewheel = function(event) {event.preventDefault();};
+		</script>
     </body>
 </html>

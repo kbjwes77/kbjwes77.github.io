@@ -33,14 +33,14 @@
 				<li><a href="/index.html">Home</a></li>
 				<li><a href="/gm/gm.html">GameMaker</a></li>
 				<li><a href="/gm/gm/verlets/">Cloth Simulation</a></li>
-				<li class="active"><a href="/gm/gm/verlets/demo/">Demo</a></li>
+				<li class="active">Demo</li>
 			</ol>
 		</div>
 		
 		<div class="container">
 			<h2>Cloth Simulation</h2>
 			<div class="embed-responsive embed-responsive-4by3">
-				<iframe id="game" src="index.html" style="overflow:hidden; width:800px; height:600px;">Loading...</iframe>
+				<iframe src="index.html" style="overflow:hidden; width:800px; height:600px;">Loading...</iframe>
 			</div>
 		</div>
 		
@@ -56,9 +56,5 @@
 		<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 		<script src="/js/vendor/bootstrap.min.js"></script>
 		<script src="/js/main.js"></script>
-		<script type="text/javascript">
-			document.getElementById("game").onwheel = function(event) {event.preventDefault();};
-			document.getElementById("game").onmousewheel = function(event) {event.preventDefault();};
-		</script>
 	</body>
 </html>
