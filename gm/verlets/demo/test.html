@@ -40,7 +40,9 @@
 		<div class="container">
 			<h2>Cloth Simulation</h2>
 			<div class="embed-responsive embed-responsive-4by3">
-				<iframe src="index.html" style="overflow:hidden; width:800px; height:600px;">Loading...</iframe>
+				<div id="nosroll">
+					<iframe src="index.html" style="overflow:hidden; width:800px; height:600px;">Loading...</iframe>
+				</div>
 			</div>
 		</div>
 		
@@ -56,5 +58,9 @@
 		<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 		<script src="/js/vendor/bootstrap.min.js"></script>
 		<script src="/js/main.js"></script>
+		<script type="text/javascript">
+			document.getElementById("noscroll").onwheel = function(event) {event.preventDefault();};
+			document.getElementById("noscroll").onmousewheel = function(event) {event.preventDefault();};
+		</script>
 	</body>
 </html>
