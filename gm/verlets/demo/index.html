@@ -9,6 +9,11 @@
         <meta charset="utf-8"/>
 
         <title>Cloth Simulation Demo</title>
+		
+		<script type="text/javascript">
+			document.getElementById("noscroll").onwheel = function(event) {event.preventDefault();};
+			document.getElementById("noscroll").onmousewheel = function(event) {event.preventDefault();};
+		</script>
 
         <style>
             body {
@@ -38,7 +43,7 @@
         </style>
     </head>
 
-    <body>
+    <body id="noscroll">
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             <!-- Create the canvas element the game draws to -->
             <canvas id="canvas" width="800" height="600">
@@ -48,9 +53,5 @@
 
         <!-- Run the game code -->
         <script type="text/javascript" src="/gm/verlets/demo/html5game/verletcloth.js?JQMZB=254339536"></script>
-		<script type="text/javascript">
-			document.getElementById("canvas").onwheel = function(event) {event.preventDefault();};
-			document.getElementById("canvas").onmousewheel = function(event) {event.preventDefault();};
-		</script>
     </body>
 </html>
