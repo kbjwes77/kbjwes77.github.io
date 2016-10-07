@@ -1,4 +1,10 @@
 @font-face {
+	font-family: 'ubuntu';
+	src:url('/fonts/ubuntu.woff2') format('woff2'),
+		url('/fonts/ubuntu.woff') format('woff'),
+		url('/fonts/ubuntu.ttf') format('truetype');
+}
+@font-face {
 	font-family: 'ubuntu-mono';
 	src:url('/fonts/ubuntu-mono.woff2') format('woff2'),
 		url('/fonts/ubuntu-mono.woff') format('woff'),
@@ -6,5 +12,8 @@
 }
 
 body {
+	font-family: 'ubuntu', sans-serif;
+}
+h1, h2, h3, h4, h5{
 	font-family: 'ubuntu-mono', sans-serif;
 }
