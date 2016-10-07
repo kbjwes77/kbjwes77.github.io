@@ -1,22 +1,10 @@
+@font-face {
+	font-family: 'ubuntu-mono';
+	src:url('ubuntu-mono.woff2') format('woff2'),
+		url('ubuntu-mono.woff') format('woff'),
+		url('ubuntu-mono.ttf') format('truetype');
+}
 
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body {
+	font-family: 'ubuntu-mono', sans-serif;
+}
