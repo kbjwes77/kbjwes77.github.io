@@ -17,8 +17,3 @@ body {
 h1, h2, h3, h4, h5 {
 	font-family: 'ubuntu-mono', sans-serif;
 }
-.half-rule { 
-    margin-left: 0;
-    text-align: left;
-    width: 50%;
- }
