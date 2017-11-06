@@ -62,19 +62,21 @@ a:visited {
 /* Buttons */
 
 .btn {
-    padding: 14px 24px;
+    padding: 8px 12px;
     border: 0 none;
-    font-weight: 700;
-    letter-spacing: 1px;
-	box-shadow: 0 3px 0 0 #000000;
-}
-.btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
+	color: #ffffff;
 }
 .btn-default {
-    background: #888888;
-    color: #ffffff;
+    background: #aaaaaa;
+	box-shadow: 0 3px 0 0 #888888;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-    background: #aaaaaa;
+    background: #bbbbbb;
+}
+.btn-success {
+    background: #15A883;
+	box-shadow: 0 3px 0 0 #0F7A5F;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+    background: #00BFA5;
 }
