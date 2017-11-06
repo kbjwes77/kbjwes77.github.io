@@ -1,3 +1,5 @@
+/* Font Declarations */
+
 @font-face {
 	font-family: 'ubuntu';
 	src:url('/fonts/ubuntu.woff2') format('woff2'),
@@ -11,9 +13,14 @@
 		url('/fonts/ubuntu-mono.ttf') format('truetype');
 }
 
+/* Default Elements */
+
 body {
 	font-family: 'ubuntu', sans-serif;
 	background-color: #212121;
+}
+hr {
+	border-top: 1px solid #888888;
 }
 h1, h2, h3, h4, h5 {
 	font-family: 'ubuntu-mono', sans-serif;
@@ -31,10 +38,16 @@ a:hover, a:active {
 a:visited {
 	color: #00BFA5;
 }
-.thumbnail {
-	background-color: #111111;
-	border: 1px solid #111111;
+
+/* Specific Classes */
+
+.page-header {
+	border: none;
 }
 .breadcrumb {
 	background-color: #111111;
+}
+.thumbnail {
+	background-color: #111111;
+	border: 1px solid #111111;
 }
