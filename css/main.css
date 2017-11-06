@@ -13,7 +13,28 @@
 
 body {
 	font-family: 'ubuntu', sans-serif;
+	background-color: #212121;
 }
 h1, h2, h3, h4, h5 {
 	font-family: 'ubuntu-mono', sans-serif;
+	color: #aaaaaa;
+}
+p {
+	color: #888888;
+}
+a {
+	color: #1DE9B6;
+}
+a:hover, a:active {
+	color: #64FFDA;
+}
+a:visited {
+	color: #00BFA5;
+}
+.thumbnail {
+	background-color: #111111;
+	border: 1px solid #111111;
+}
+.breadcrumb {
+	background-color: #111111;
 }
