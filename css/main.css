@@ -24,7 +24,7 @@ hr {
 }
 h1, h2, h3, h4, h5 {
 	font-family: 'ubuntu-mono', sans-serif;
-	color: #aaaaaa;
+	color: #AAAAAA;
 }
 p {
 	color: #888888;
@@ -36,7 +36,7 @@ a:hover, a:active {
 	color: #64FFDA;
 }
 a:visited {
-	color: #00BFA5;
+	color: #CCCCCC;
 }
 
 /* Specific Classes */
@@ -64,21 +64,21 @@ a:visited {
 .btn {
     padding: 8px 12px;
     border: 0 none;
-	color: #ffffff;
-}
-.btn a{
-	color: #ffffff;
-	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+	color: #FFFFFF;
 }
 .btn-default {
-    background: #aaaaaa;
+    background: #AAAAAA;
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 	box-shadow: 0 3px 0 0 #888888;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-    background: #bbbbbb;
+    background: #CCCCCC;
 }
 .btn-success {
     background: #15A883;
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 	box-shadow: 0 3px 0 0 #0F7A5F;
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
