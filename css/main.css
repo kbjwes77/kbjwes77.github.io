@@ -49,15 +49,15 @@ a:visited {
 .nav-tabs {
 	border: none;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
-.nav-tabs>li>a:hover, .nav-tabs>li>a:focus {
-    color: #aaa;
-    background-color: #111;
-    border: none;
-}
 .nav-tabs>li>a {
     margin-right: 2px;
     line-height: 1.42857143;
+    border: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
+.nav-tabs>li>a:hover, .nav-tabs>li>a:focus, .nav>li>a:hover, .nav>li>a:focus {
+    color: #aaa;
+    background-color: #111;
     border: none;
 }
 .breadcrumb {
