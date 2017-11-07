@@ -43,6 +43,13 @@ a:visited {
 
 .page-header {
 	border: none;
+	padding: none;
+    margin: 40px 0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #aaa;
+    background-color: #111;
+    border: none;
 }
 .breadcrumb {
 	background-color: #111111;
