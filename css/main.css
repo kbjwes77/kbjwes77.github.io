@@ -39,7 +39,7 @@ a:visited {
 	color: #CCCCCC;
 }
 
-/* Specific Classes */
+/* Body */
 
 .page-header {
 	border: none;
@@ -50,9 +50,15 @@ a:visited {
 .jumbotron {
     background-color: #111111;
 }
+
+/* Previews */
+
 .thumbnail {
 	background-color: #111111;
 	border: 1px solid #111111;
+}
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+    border-color: #111111;
 }
 .embed-responsive video {
 	border: 5px solid #111111;
