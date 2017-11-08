@@ -10,8 +10,6 @@
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="/css/main.css">
-
-        <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     
     <body>
@@ -20,28 +18,28 @@
                 <h1>kbjwes77.github.io</h1>
                 
                 <ul class="nav nav-tabs">
-                    <li role="presentation"><a href="/index.html">Home</a></li>
-					<li role="presentation" class="active"><a href="/gm/gm.html">Gamedev</a></li>
-					<li role="presentation"><a href="/music.html">Music</a></li>
-					<li role="presentation"><a href="/about.html">About</a></li>
-					<li role="presentation"><a href="/contact.html">Contact</a></li>
+                    <li role="presentation"><a href="/index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li role="presentation" class="active"><a href="/gamedev.html"><span class="glyphicon glyphicon-knight" aria-hidden="true"></span></a></li>
+					<li role="presentation"><a href="/music.html"><span class="glyphicon glyphicon-music" aria-hidden="true"></span></a></li>
+					<li role="presentation"><a href="/about.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></li>
+					<li role="presentation"><a href="/contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
     
             <ol class="breadcrumb">
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/gm/gm.html">Gamedev</a></li>
-                <li class="active">Flocking Simulation</li>
+                <li><a href="/gamedev.html">Gamedev</a></li>
+                <li class="active">Conway's Game of Life</li>
             </ol>
         </div>
         
         <div class="jumbotron">
             <div class="container">
-                <h2>Flocking Simulation</h2>
-                <p>Interactive flocking simulation. Uses a simple steering algorithm which results in some interesting and complex emergent behaviors.</p>
-				<p><small>Adapted from <a href="http://goo.gl/WD0LbW">Daniel Shiffman's</a> and <a href="http://goo.gl/GcHUy6">Vijay Pemmaraju's </a>tutorials. Original concept by <a href="http://goo.gl/pXI92x">Craig Reynolds</a>.</small></p>
-				<a type="button" class="btn btn-success" href="/gm/boids/demo/" target="_blank">Live Demo</a>
-                <a type="button" class="btn btn-default" href="/gm/boids/source.gmz" target="_blank">Download Source</a>
+                <h2>Conway's Game of Life</h2>
+                <p>Interactive Game of Life simulation. Grid based cellular automata with a few simple rules dictates how the simulation will play out.</p>
+				<p><small>Adapted from <a href="http://goo.gl/lP70ba">Wikipedia</a> and <a href="http://goo.gl/ecbf22">Pedro Verruma's </a>tutorial.</small></p>
+				<a type="button" class="btn btn-success" href="/gamedev/conway/demo/" target="_blank">Live Demo</a>
+                <a type="button" class="btn btn-default" href="/gamedev/conway/source.gmz" target="_blank">Download Source</a>
             </div>
         </div>
 		
@@ -50,18 +48,18 @@
 			<div class="row">
 				<div class="col-xs-6 col-md-6">
 					<div class="embed-responsive embed-responsive-4by3">
-						<a href="/gm/boids/gfy1.webm">
+						<a href="/gamedev/conway/gfy1.webm">
 							<video class="gfy-thumbnail" width="auto" height="auto" autoplay loop>
-								<source src="/gm/boids/gfy1.webm" type="video/webm">
+								<source src="/gamedev/conway/gfy1.webm" type="video/webm">
 							</video>
 						</a>
 					</div>
 				</div>
 				<div class="col-xs-6 col-md-6">
 					<div class="embed-responsive embed-responsive-4by3">
-						<a href="/gm/boids/gfy2.webm">
+						<a href="/gamedev/conway/gfy2.webm">
 							<video class="gfy-thumbnail" width="auto" height="auto" autoplay loop>
-								<source src="/gm/boids/gfy2.webm" type="video/webm">
+								<source src="/gamedev/conway/gfy2.webm" type="video/webm">
 							</video>
 						</a>
 					</div>
@@ -73,8 +71,13 @@
             <h1><small>Screenshots</small></h1>
             <div class="row">
 				<div class="col-xs-6 col-md-4">
-					<a href="/gm/boids/thumb1.png" class="thumbnail">
-						<img src="/gm/boids/thumb1.png" alt="...">
+					<a href="/gamedev/conway/thumb1.png" class="thumbnail">
+						<img src="/gamedev/conway/thumb1.png" alt="...">
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<a href="/gamedev/conway/thumb2.png" class="thumbnail">
+						<img src="/gamedev/conway/thumb2.png" alt="...">
 					</a>
 				</div>
             </div>
@@ -86,9 +89,7 @@
             </footer>
         </div>
     
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write("<script src="/js/vendor/jquery-1.11.2.min.js"><\/script>")</script>
-        <script src="/js/vendor/bootstrap.min.js"></script>
-        <script src="/js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
     </body>
 </html>
