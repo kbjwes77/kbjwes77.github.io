@@ -46,6 +46,12 @@ a:visited {
 	padding-bottom: 0px;
     margin: 40px 0 0;
 }
+.page-header h1 {
+	color: #CCCCCC;
+	}
+.page-header h1:hover {
+	color: #1DE9B6;
+	}
 .nav-tabs {
 	border: none;
 }
