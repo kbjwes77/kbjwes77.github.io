@@ -61,12 +61,13 @@ a:visited {
 .nav-tabs>li>a {
     margin-right: 2px;
     line-height: 1.42857143;
+	color: #CCCCCC;
     border: none;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
 .nav-tabs>li>a:hover, .nav-tabs>li>a:focus, .nav>li>a:hover, .nav>li>a:focus {
-    color: #aaa;
-    background-color: #111;
+    color: #1DE9B6;
+    background-color: #111111;
     border: none;
 }
 .breadcrumb {
