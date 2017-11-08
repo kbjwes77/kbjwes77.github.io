@@ -52,6 +52,9 @@ a:visited {
 .page-header h1:hover {
 	color: #1DE9B6;
 	}
+.page-header span {
+	font-size: 24px;
+}
 .nav-tabs {
 	border: none;
 }
