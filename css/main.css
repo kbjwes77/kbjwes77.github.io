@@ -38,6 +38,9 @@ a:hover, a:active {
 a:visited {
 	color: #CCCCCC;
 }
+li {
+	color: #888888;
+}
 
 /* Body */
 
