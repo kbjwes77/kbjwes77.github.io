@@ -1,29 +1,22 @@
 /* Font Declarations */
 
 @font-face {
-	font-family: 'ubuntu';
-	src:url('/fonts/ubuntu.woff2') format('woff2'),
-		url('/fonts/ubuntu.woff') format('woff'),
-		url('/fonts/ubuntu.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'ubuntu-mono';
-	src:url('/fonts/ubuntu-mono.woff2') format('woff2'),
-		url('/fonts/ubuntu-mono.woff') format('woff'),
-		url('/fonts/ubuntu-mono.ttf') format('truetype');
+	font-family: 'patua';
+	src:url('/fonts/patua.woff2') format('woff2'),
+		url('/fonts/patua.woff') format('woff'),
+		url('/fonts/patua.ttf') format('truetype');
 }
 
 /* Default Elements */
 
 body {
-	font-family: 'ubuntu', sans-serif;
+	font-family: 'patua', sans-serif;
 	background-color: #212121;
 }
 hr {
 	border-top: 1px solid #888888;
 }
 h1, h2, h3, h4, h5 {
-	font-family: 'ubuntu-mono', sans-serif;
 	color: #AAAAAA;
 }
 p {
