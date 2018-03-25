@@ -16,13 +16,13 @@ body {
 	line-height: 1.4;
 }
 hr {
-	border-top: 1px solid #888888;
+	border-top: 1px solid #888;
 }
 h1, h2, h3, h4, h5 {
-	color: #AAAAAA;
+	color: #AAA;
 }
 p {
-	color: #888888;
+	color: #888;
 }
 a {
 	color: #1DE9B6;
@@ -31,10 +31,10 @@ a:hover, a:active {
 	color: #64FFDA;
 }
 a:visited {
-	color: #CCCCCC;
+	color: #CCC;
 }
 li {
-	color: #888888;
+	color: #888;
 }
 
 /* Body */
@@ -45,7 +45,7 @@ li {
     margin: 40px 0 0;
 }
 .page-header h1 {
-	color: #CCCCCC;
+	color: #CCC;
 	}
 .page-header h1:hover {
 	color: #1DE9B6;
@@ -59,20 +59,20 @@ li {
 .nav-tabs>li>a {
     margin-right: 2px;
     line-height: 1.42857143;
-	color: #CCCCCC;
+	color: #CCC;
     border: none;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
 .nav-tabs>li>a:hover, .nav-tabs>li>a:focus, .nav>li>a:hover, .nav>li>a:focus {
     color: #1DE9B6;
-    background-color: #111111;
+    background-color: #111;
     border: none;
 }
 .breadcrumb {
-	background-color: #111111;
+	background-color: #111;
 }
 .jumbotron {
-    background-color: #111111;
+    background-color: #111;
 }
 .panel {
 	border: none;
@@ -81,18 +81,21 @@ li {
 	padding: 32px;
 	background-color: #333;
 }
+.panel-body a {
+	color: #CCC;
+}
 
 /* Previews */
 
 .thumbnail {
-	background-color: #111111;
-	border: 1px solid #111111;
+	background-color: #111;
+	border: 1px solid #111;
 }
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
-    border-color: #111111;
+    border-color: #111;
 }
 .embed-responsive video {
-	border: 5px solid #111111;
+	border: 5px solid #111;
 	border-radius: 4px;
 }
 
@@ -101,20 +104,20 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .btn, .btn:visited, .btn:hover, .btn:focus, .btn:active {
     padding: 8px 12px;
     border: 0 none;
-	color: #FFFFFF;
+	color: #FFF;
 }
 .btn-default {
-    background: #AAAAAA;
-	color: #FFFFFF;
+    background: #AAA;
+	color: #FFF;
 	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
-	box-shadow: 0 3px 0 0 #888888;
+	box-shadow: 0 3px 0 0 #888;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-    background: #CCCCCC;
+    background: #CCC;
 }
 .btn-success {
     background: #15A883;
-	color: #FFFFFF;
+	color: #FFF;
 	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 	box-shadow: 0 3px 0 0 #0F7A5F;
 }
