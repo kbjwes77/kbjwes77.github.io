@@ -10,7 +10,7 @@
 /* Default Elements */
 
 body {
-	background-color: #212121;
+	background-color: #262626;
 	font-family: 'patua', sans-serif;
 	font-size: 18px;
 	line-height: 1.4;
@@ -65,21 +65,21 @@ li {
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
 .nav-tabs>li>a:hover, .nav-tabs>li>a:focus, .nav>li>a:hover, .nav>li>a:focus {
     color: #1DE9B6;
-    background-color: #111;
+    background-color: #363636;
     border: none;
 }
 .breadcrumb {
-	background-color: #111;
+	background-color: #363636;
 }
 .jumbotron {
-    background-color: #111;
+    background-color: #363636;
 }
 .panel {
 	border: none;
 }
 .panel-body {
 	padding: 32px;
-	background-color: #333;
+	background-color: #363636;
 }
 .panel-body a {
 	color: #CCC;
