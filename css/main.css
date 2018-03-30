@@ -88,14 +88,14 @@ li {
 /* Previews */
 
 .thumbnail {
-	background-color: #111;
-	border: 1px solid #111;
+	background-color: #363636;
+	border: 1px solid #363636;
 }
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
-    border-color: #111;
+    border-color: #363636;
 }
 .embed-responsive video {
-	border: 5px solid #111;
+	border: 5px solid #363636;
 	border-radius: 4px;
 }
 
