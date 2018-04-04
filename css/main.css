@@ -10,7 +10,7 @@
 /* Default Elements */
 
 body {
-	background-color: #262626;
+	background-color: #323232;
 	font-family: 'patua', sans-serif;
 	font-size: 18px;
 	line-height: 1.4;
@@ -19,7 +19,7 @@ hr {
 	border-top: 1px solid #888;
 }
 h1, h2, h3, h4, h5 {
-	color: #AAA;
+	color: #CCC;
 }
 p {
 	color: #888;
@@ -31,7 +31,7 @@ a:hover, a:active {
 	color: #64FFDA;
 }
 a:visited {
-	color: #CCC;
+	color: #AAA;
 }
 li {
 	color: #888;
@@ -65,21 +65,23 @@ li {
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
 .nav-tabs>li>a:hover, .nav-tabs>li>a:focus, .nav>li>a:hover, .nav>li>a:focus {
     color: #1DE9B6;
-    background-color: #363636;
+    background-color: #424242;
     border: none;
 }
 .breadcrumb {
-	background-color: #363636;
+	background-color: #424242;
 }
 .jumbotron {
-    background-color: #363636;
+    background-color: #424242;
+	box-shadow: 0 4px 8px #111;
 }
 .panel {
 	border: none;
+	box-shadow: 0 4px 8px #111;
 }
 .panel-body {
 	padding: 32px;
-	background-color: #363636;
+	background-color: #424242;
 }
 .panel-body a {
 	color: #CCC;
@@ -88,14 +90,14 @@ li {
 /* Previews */
 
 .thumbnail {
-	background-color: #363636;
-	border: 1px solid #363636;
+	background-color: #424242;
+	border: 1px solid #424242;
 }
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
-    border-color: #363636;
+    border-color: #424242;
 }
 .embed-responsive video {
-	border: 5px solid #363636;
+	border: 5px solid #424242;
 	border-radius: 4px;
 }
 
