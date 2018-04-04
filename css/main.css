@@ -92,6 +92,7 @@ li {
 .thumbnail {
 	background-color: #424242;
 	border: 1px solid #424242;
+	box-shadow: 0 4px 8px #111;
 }
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     border-color: #424242;
