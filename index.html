@@ -1,35 +1,65 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title></title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110781447-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js',new Date());	gtag('config','UA-110781447-1');
-	</script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110781447-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js',new Date());	gtag('config','UA-110781447-1');
+		</script>
+		
+		<!-- LOAD LATEST FEED POSTS -->
+		<script>
+		var req3 = new XMLHttpRequest();
+		req3.open('GET', '/feed/post-3.html', true);
+		req3.onreadystatechange= function() {
+			if (this.readyState!==4) return;
+			if (this.status!==200) return;
+			document.getElementById('post-3').innerHTML= this.responseText;
+			};
+		req3.send();
+		
+		var req2 = new XMLHttpRequest();
+		req2.open('GET', '/feed/post-2.html', true);
+		req2.onreadystatechange= function() {
+			if (this.readyState!==4) return;
+			if (this.status!==200) return;
+			document.getElementById('post-2').innerHTML= this.responseText;
+			};
+		req2.send();
+		
+		var req1 = new XMLHttpRequest();
+		req1.open('GET', '/feed/post-1.html', true);
+		req1.onreadystatechange= function() {
+			if (this.readyState!==4) return;
+			if (this.status!==200) return;
+			document.getElementById('post-1').innerHTML= this.responseText;
+			};
+		req1.send();
+		</script>
 
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="/css/main.css">
-</head>
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
 	<body>
 		<div class="container">
 			<div class="page-header">
-	<h1>kbjwes77.github.io</h1>
-	<ul class="nav nav-tabs">
-		<li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-		<li role="presentation"><a href="/gamedev.html"><span class="glyphicon glyphicon-knight" aria-hidden="true"></span></a></li>
-		<li role="presentation"><a href="/music.html"><span class="glyphicon glyphicon-music" aria-hidden="true"></span></a></li>
-		<li role="presentation"><a href="/feed.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
-		<li role="presentation"><a href="/contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
-	</ul>
-</div>
+				<h1>kbjwes77.github.io</h1>
+				<ul class="nav nav-tabs">
+					<li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li role="presentation"><a href="/gamedev.html"><span class="glyphicon glyphicon-knight" aria-hidden="true"></span></a></li>
+					<li role="presentation"><a href="/music.html"><span class="glyphicon glyphicon-music" aria-hidden="true"></span></a></li>
+					<li role="presentation"><a href="/feed.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
+					<li role="presentation"><a href="/contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+				</ul>
+			</div>
 		</div>
 		<div class="jumbotron">
 			<div class="container">
@@ -37,50 +67,22 @@
 				<p>Thanks for stopping by, have a look around! There's a growing showcase of my game development endeavors, as well as a collection of music that I have produced. You can think of this as a sort of portfolio, but mostly it's just a personal project that keeps me organized.</p>
 			</div>
 		</div>
+		
 		<div class="container">
 			<div class="row">
-	<div class="col-sm-12">
-		<div class="row">
-			<div class="col-sm-4">
-				<img class="img-responsive" src="/feed/033018/thumb.png"></img>
-			</div>
-			<div class="col-sm-8">
-				<div class="panel panel-default">
-					<div class="panel-body" id="033018">
-						<a href="https://kbjwes77.github.io/feed.html#033018"><h2>The Static Site Generator</h2></a><p><small>03/30/2018</small></p>
-						<p>I'm a programmer. I love to tinker, experiment, and try ridiculous things. I also stay up way too late trying to get these projects to do what I want them to. Anyways, I just wrangled a long-time programming goal of mine. So, Github Pages is a web host, but it serves <a href="https://en.wikipedia.org/wiki/Static_web_page">static web pages</a>. This means that this website is a group of files on a Github server somewhere, and it is served to you as is, with no fancy databases or scripting. Static web pages are simple to create and they require very little processing power from the server to get the website to you. This is great for small sites and projects where the content doesn't change much, or doesn't need a lot of upkeep. This used to be the case for me, however as my list of projects and games grew, so did the work needed to add them here to my site. That's where my programming project comes in. The basic idea is that I would write a program to stitch together some data and a few template files to write my site for me. So I did just that. In fact, the page you're reading from right now has been pre-processed by the static site generator, and that output is uploaded directly to my Github Pages repo for you to access as part of my website. This system I've created makes it simple to change a template and in turn update all pages that use that template. So instead of rewriting the header of each page to use the latest version of jQuery, I can edit the header template file and every page using that header template gets updated automatically. This should make adding new projects a breeze, as well as posting exciting updates like this! I'm looking forward to my next project, and now you can follow along here as I record my progress and share my game development journey! Well, thanks for reading!</p>
-					</div>
-				</div>
+				<div id="post-3"></div>
+				<div id="post-2"></div>
+				<div id="post-1"></div>
 			</div>
 		</div>
-	</div>
-</div>
-			<div class="row">
-	<div class="col-sm-12">
-		<div class="row">
-			<div class="col-sm-4">
-				<img class="img-responsive" src="/feed/032918/thumb.gif"></img>
-			</div>
-			<div class="col-sm-8">
-				<div class="panel panel-default">
-					<div class="panel-body" id="032918">
-						<a href="https://kbjwes77.github.io/feed.html#032918"><h2>H.V.N.T.R.S. and 7DRL</h2></a><p><small>03/30/2018</small></p>
-						<p>Recently I was browsing the gamedev channels on Twitch, when I happened to come across <a href="https://twitter.com/FourbitFriday">Tyriq Plummer</a> streaming his development of a game called <a href="https://www.ckgame.net/">Catacomb Kids</a>. It's a very complex roguelike platformer, and it caught my attention. So I followed his channel, watched a few streams, and that was it. A bit later, <a href="http://7drl.org/">7DRL (7 Day Rogue-Like)</a> rolled up and I didn't have any good ideas or designs. I love game jams, but it was looking like I was to sit this one out. Defeated but still in the creative mood, I went back to Tyriq's stream, and to my surprise, he was working on his own game for the 7DRL! It looked really interesting, gritty, dark and gothic. The concept and art peaked my interest, enough so that I asked him if I could make music for his entry. He said sure, so I made a couple of demos and sent them out. He happened to like one of the prototypes, and so I went on to make the rest of the soundtrack for the game! It was kind of rushed, so it's not exactly what I want it to be, but I think I nailed the game's style and mood with the music. There's currently four tracks (one is unused in the competition version). We're talking about possibly expanding on the game as time goes on, we'll see! If you would like to give <a href="https://fourbitfriday.itch.io/hvntrs-7drl">H.V.N.T.R.S. a go, download it for free on itch.io</a> and check it out. If you would like to listen to the whole soundtrack, you can <a href="https://soundcloud.com/john-wesley-kbjwes77/sets/hvntrs">listen to it here on Soundcloud</a>. It was heavily influenced by the original Diablo soundtrack by Matt Uelmen, one of my favorite game soundtracks. I look forward to writing more game music in the future, but for now I'm going to focus on the programming side of gamedev again.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-			
-		</div>
+		
 		<div class="container">
-	<footer>
-		<p>&copy; kbjwes77/octalpus 2018, made possible with: <a href="http://getbootstrap.com/">Bootstrap</a>, created by Twitter <a href="https://creativecommons.org/licenses/by/3.0/">(CC-BY)</a></p>
-	</footer>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+			<footer>
+				<p>&copy; kbjwes77/octalpus 2018, made possible with: <a href="http://getbootstrap.com/">Bootstrap</a>, created by Twitter <a href="https://creativecommons.org/licenses/by/3.0/">(CC-BY)</a></p>
+			</footer>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
 	</body>
 </html>
