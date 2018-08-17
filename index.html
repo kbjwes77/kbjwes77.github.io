@@ -17,7 +17,7 @@
 		<!-- LOAD LATEST FEED POSTS -->
 		<script>
 		var req3 = new XMLHttpRequest();
-		req3.open('GET', '/feed/post-3.html', true);
+		req3.open('GET', '/feed/post3/post.html', true);
 		req3.onreadystatechange= function() {
 			if (this.readyState!==4) return;
 			if (this.status!==200) return;
@@ -26,7 +26,7 @@
 		req3.send();
 		
 		var req2 = new XMLHttpRequest();
-		req2.open('GET', '/feed/post-2.html', true);
+		req2.open('GET', '/feed/post2/post.html', true);
 		req2.onreadystatechange= function() {
 			if (this.readyState!==4) return;
 			if (this.status!==200) return;
@@ -35,7 +35,7 @@
 		req2.send();
 		
 		var req1 = new XMLHttpRequest();
-		req1.open('GET', '/feed/post-1.html', true);
+		req1.open('GET', '/feed/post1/post.html', true);
 		req1.onreadystatechange= function() {
 			if (this.readyState!==4) return;
 			if (this.status!==200) return;
