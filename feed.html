@@ -25,7 +25,7 @@
 				
 				for (var i = 0; i < feed_len; i++)
 					{
-					(function(feed_ind)
+					(function(feed_ind) // need function closure
 						{
 						if (feed_ind >= feed_min && feed_ind <= feed_max)
 							{
@@ -36,10 +36,12 @@
 								if (this.readyState!==4) return;
 								if (this.status!==200) return;
 								document.getElementById("post-" + feed_ind).innerHTML = this.responseText;
+								
+								
 								};
 							req.send();
 							};
-						})(feed_min+i)
+						})(feed_min+i) // closure so variables aren't changed inside the loop from outside (stupid ASYNC)
 					};
 				};
 		</script>

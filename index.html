@@ -16,32 +16,34 @@
 		
 		<!-- LOAD LATEST FEED POSTS -->
 		<script>
-		var req3 = new XMLHttpRequest();
-		req3.open('GET', '/feed/post3/post.html', true);
-		req3.onreadystatechange= function() {
-			if (this.readyState!==4) return;
-			if (this.status!==200) return;
-			document.getElementById('post-3').innerHTML= this.responseText;
-			};
-		req3.send();
-		
-		var req2 = new XMLHttpRequest();
-		req2.open('GET', '/feed/post2/post.html', true);
-		req2.onreadystatechange= function() {
-			if (this.readyState!==4) return;
-			if (this.status!==200) return;
-			document.getElementById('post-2').innerHTML= this.responseText;
-			};
-		req2.send();
-		
-		var req1 = new XMLHttpRequest();
-		req1.open('GET', '/feed/post1/post.html', true);
-		req1.onreadystatechange= function() {
-			if (this.readyState!==4) return;
-			if (this.status!==200) return;
-			document.getElementById('post-1').innerHTML= this.responseText;
-			};
-		req1.send();
+			window.onload = function()
+				{
+				var feed_min = 1;
+				var feed_max = 3;
+				var feed_len = 3;
+				var req;
+				
+				for (var i = 0; i < feed_len; i++)
+					{
+					(function(feed_ind) // need function closure
+						{
+						if (feed_ind >= feed_min && feed_ind <= feed_max)
+							{
+							req = new XMLHttpRequest();
+							req.open("GET","/feed/post" + feed_ind + "/post.html", true);
+							req.onreadystatechange= function()
+								{
+								if (this.readyState!==4) return;
+								if (this.status!==200) return;
+								document.getElementById("post-" + feed_ind).innerHTML = this.responseText;
+								
+								$clamp(document.getElementById("post-" + feed_ind + "-text"), {clamp: 3});
+								};
+							req.send();
+							};
+						})(feed_min+i) // closure so variables aren't changed inside the loop from outside (stupid ASYNC)
+					};
+				};
 		</script>
 
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
