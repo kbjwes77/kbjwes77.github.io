@@ -24,16 +24,16 @@
 		var req = [];
 		for (i = 3; i >= Math.max(1,feed_pos-feed_len); i--) {
 			req[feed_ind] = new XMLHttpRequest();
-			req[feed_ind].open('GET', '/feed/post'+String(i)+'/post.html', true);
+			req[feed_ind].open('GET', '/feed/post'+i.toString()+'/post.html', true);
 			req[feed_ind].onreadystatechange= function() {
 				if (this.readyState!==4) return;
 				if (this.status!==200) return;
 				
-				var divID = document.getElementById('post-'+String(i));
+				var divID = document.getElementById('post-'+i.toString());
 				divID.innerHTML = this.responseText;
 				
 				/*
-				var textID = document.getElementById('post-'+String(i)+'-text');
+				var textID = document.getElementById('post-'+i.toString()+'-text');
 				$clamp(textID, {clamp: 3});*/
 				};
 			req[feed_ind].send();
