@@ -86,6 +86,7 @@ li {
 .panel-body a {
 	color: #CCC;
 }
+
 /* Previews */
 
 .thumbnail {
@@ -99,10 +100,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .embed-responsive video {
 	border: 5px solid #424242;
 	border-radius: 4px;
-}
-#feed-thumbnail {
-	margin-bottom: 32px;
-	box-shadow: 0 4px 8px #222;
 }
 
 /* Buttons */
