@@ -16,11 +16,12 @@
 		
 		<!-- LOAD LATEST FEED POSTS -->
 		<script>
-			var feed_pos = 3;
+			var feed_min = 1;
+			var feed_max = 3;
 			var feed_len = 3;
 			
 			var i;
-			for (i = feed_pos; i >= Math.max(1,feed_pos-feed_len); i--) {
+			for (i = feed_min; i <= Math.min(feed_min+feed_len,feed_max); i--) {
 				var req = new XMLHttpRequest();
 				req.open("GET","/feed/post" + i + "/post.html", true);
 				req.onreadystatechange= function() {
@@ -29,10 +30,6 @@
 					
 					var divID = document.getElementById("post-" + i);
 					divID.innerHTML = this.responseText;
-					
-					/*
-					var textID = document.getElementById('post-'+i.toString()+'-text');
-					$clamp(textID, {clamp: 3});*/
 					};
 				req.send();
 				};
