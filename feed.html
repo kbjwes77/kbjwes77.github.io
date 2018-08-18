@@ -25,7 +25,7 @@
 			for (i = 0; i < feed_len; i++)
 				{
 				var feed_ind = feed_min+i;
-				if (feed_ind >= feed_min) and (feed_ind <= feed_max)
+				if (feed_ind >= feed_min && feed_ind <= feed_max)
 					{
 					var req[i] = new XMLHttpRequest();
 					req[i].open("GET","/feed/post" + feed_ind + "/post.html", true);
