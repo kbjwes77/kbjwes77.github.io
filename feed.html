@@ -21,7 +21,7 @@
 			var feed_len = 3;
 			
 			var i;
-			for (i = feed_min; i <= Math.min(feed_min+feed_len,feed_max); i--) {
+			for (i = feed_min; i <= Math.min(feed_min+feed_len,feed_max); i++;) {
 				var req = new XMLHttpRequest();
 				req.open("GET","/feed/post" + i + "/post.html", true);
 				req.onreadystatechange= function() {
