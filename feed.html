@@ -18,26 +18,23 @@
 		<script>
 		var feed_pos = 3;
 		var feed_len = 3;
-		var feed_ind = 0;
 		
 		var i;
-		var req = [];
-		for (i = 3; i >= Math.max(1,feed_pos-feed_len); i--) {
-			req[feed_ind] = new XMLHttpRequest();
-			req[feed_ind].open('GET', '/feed/post'+i.toString()+'/post.html', true);
-			req[feed_ind].onreadystatechange= function() {
+		for (i = feed_pos; i >= Math.max(1,feed_pos-feed_len); i--) {
+			var req = new XMLHttpRequest();
+			req.open("GET","/feed/post" + i.toString() + "/post.html", true);
+			req.onreadystatechange= function() {
 				if (this.readyState!==4) return;
 				if (this.status!==200) return;
 				
-				var divID = document.getElementById('post-'+i.toString());
+				var divID = document.getElementById("post-" + i.toString());
 				divID.innerHTML = this.responseText;
 				
 				/*
 				var textID = document.getElementById('post-'+i.toString()+'-text');
 				$clamp(textID, {clamp: 3});*/
 				};
-			req[feed_ind].send();
-			feed_ind++;
+			req.send();
 			};
 		</script>
 		
