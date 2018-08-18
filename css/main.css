@@ -89,6 +89,9 @@ li {
 .feed-thumbnail {
 	box-shadow: 0 4px 8px #222;
 }
+.feed-post {
+	margin-bottom: 32px;
+}
 /* Previews */
 
 .thumbnail {
