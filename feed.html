@@ -19,7 +19,7 @@
 			var feed_min = 1;
 			var feed_max = 3;
 			var feed_len = 3;
-			var req = [];
+			var req;
 			
 			var i;
 			for (i = 0; i < feed_len; i++)
@@ -27,7 +27,7 @@
 				var feed_ind = feed_min+i;
 				if (feed_ind >= feed_min && feed_ind <= feed_max)
 					{
-					var req[i] = new XMLHttpRequest();
+					req[i] = new XMLHttpRequest();
 					req[i].open("GET","/feed/post" + feed_ind + "/post.html", true);
 					req[i].onreadystatechange= function()
 						{
