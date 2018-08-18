@@ -16,34 +16,28 @@
 		
 		<!-- LOAD LATEST FEED POSTS -->
 		<script>
-		var req3 = new XMLHttpRequest();
-		req3.open('GET', '/feed/post3/post.html', true);
-		req3.onreadystatechange= function() {
-			if (this.readyState!==4) return;
-			if (this.status!==200) return;
-			document.getElementById('post-3').innerHTML= this.responseText;
-			};
-		req3.send();
+		var feed_pos = 3;
+		var feed_len = 3;
+		var feed_ind = 0;
 		
-		var req2 = new XMLHttpRequest();
-		req2.open('GET', '/feed/post2/post.html', true);
-		req2.onreadystatechange= function() {
-			if (this.readyState!==4) return;
-			if (this.status!==200) return;
-			document.getElementById('post-2').innerHTML= this.responseText;
+		var i;
+		var req = [];
+		for (i = 3; i >= Math.max(1,feed_pos-feed_len); i--) {
+			req[feed_ind] = new XMLHttpRequest();
+			req[feed_ind].open('GET', '/feed/post'+String(i)+'/post.html', true);
+			req[feed_ind].onreadystatechange= function() {
+				if (this.readyState!==4) return;
+				if (this.status!==200) return;
+				
+				var textID = document.getElementById('post-'+String(i));
+				textID.innerHTML = this.responseText;
+				$clamp(textID, {clamp: 3});
+				};
+			req[feed_ind].send();
+			feed_ind++;
 			};
-		req2.send();
-		
-		var req1 = new XMLHttpRequest();
-		req1.open('GET', '/feed/post1/post.html', true);
-		req1.onreadystatechange= function() {
-			if (this.readyState!==4) return;
-			if (this.status!==200) return;
-			document.getElementById('post-1').innerHTML= this.responseText;
-			};
-		req1.send();
 		</script>
-
+		
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="/css/main.css">
