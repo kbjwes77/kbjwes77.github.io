@@ -32,8 +32,9 @@
 				var divID = document.getElementById('post-'+String(i));
 				divID.innerHTML = this.responseText;
 				
+				/*
 				var textID = document.getElementById('post-'+String(i)+'-text');
-				$clamp(textID, {clamp: 3});
+				$clamp(textID, {clamp: 3});*/
 				};
 			req[feed_ind].send();
 			feed_ind++;
