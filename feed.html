@@ -29,8 +29,10 @@
 				if (this.readyState!==4) return;
 				if (this.status!==200) return;
 				
-				var textID = document.getElementById('post-'+String(i));
-				textID.innerHTML = this.responseText;
+				var divID = document.getElementById('post-'+String(i));
+				divID.innerHTML = this.responseText;
+				
+				var textID = document.getElementById('post-'+String(i)+'-text');
 				$clamp(textID, {clamp: 3});
 				};
 			req[feed_ind].send();
