@@ -18,34 +18,42 @@
 		<script>
 			window.onload = function()
 				{
+				var feed_ind = 1;
+				function getQueryVariable()
+					{
+					var query = window.location.search.substring(1);
+					var vars = query.split("&");
+					for (var i=0;i<vars.length;i++)
+						{
+						var pair = vars[i].split("=");
+						if(pair[0] == "id")
+							{
+							feed_ind = pair[1];
+							return;
+							}
+						}
+					return;
+					}
+				
 				var feed_min = 1;
 				var feed_max = 3;
-				var feed_len = 3;
 				var req;
 				
-				for (var i = 0; i < feed_len; i++)
+				if (feed_ind >= feed_min && feed_ind <= feed_max)
 					{
-					(function(feed_ind,post_div) // need function closure
+					req = new XMLHttpRequest();
+					req.open("GET","/feed/post" + feed_ind + "/post.html", true);
+					req.onreadystatechange= function()
 						{
-						if (feed_ind >= feed_min && feed_ind <= feed_max)
-							{
-							req = new XMLHttpRequest();
-							req.open("GET","/feed/post" + feed_ind + "/post.html", true);
-							req.onreadystatechange= function()
-								{
-								if (this.readyState!==4) return;
-								if (this.status!==200) return;
-								document.getElementById("post-" + post_div).innerHTML = this.responseText;
-								
-								$clamp(document.getElementById("post-" + post_div + "-text"), {clamp: 3});
-								};
-							req.send();
-							};
-						})(feed_min+i,i+1) // closure so variables aren't changed inside the loop from outside (stupid ASYNC)
+						if (this.readyState!==4) return;
+						if (this.status!==200) return;
+						document.getElementById("post").innerHTML = this.responseText;
+						};
+					req.send();
 					};
 				};
 		</script>
-
+		
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="/css/main.css">
@@ -55,26 +63,18 @@
 			<div class="page-header">
 				<h1>kbjwes77.github.io</h1>
 				<ul class="nav nav-tabs">
-					<li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li role="presentation"><a href="/index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
 					<li role="presentation"><a href="/gamedev.html"><span class="glyphicon glyphicon-knight" aria-hidden="true"></span></a></li>
 					<li role="presentation"><a href="/music.html"><span class="glyphicon glyphicon-music" aria-hidden="true"></span></a></li>
-					<li role="presentation"><a href="/feed.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
+					<li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
 					<li role="presentation"><a href="/contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
 				</ul>
-			</div>
-		</div>
-		<div class="jumbotron">
-			<div class="container">
-				<h2>Welcome!</h2>
-				<p>Thanks for stopping by, have a look around! There's a growing showcase of my game development endeavors, as well as a collection of music that I have produced. You can think of this as a sort of portfolio, but mostly it's just a personal project that keeps me organized.</p>
 			</div>
 		</div>
 		
 		<div class="container">
 			<div class="row">
-				<div id="post-3"></div>
-				<div id="post-2"></div>
-				<div id="post-1"></div>
+				<div id="post"></div>
 			</div>
 		</div>
 		
@@ -83,7 +83,7 @@
 				<p>&copy; kbjwes77/octalpus 2018, made possible with: <a href="http://getbootstrap.com/">Bootstrap</a>, created by Twitter <a href="https://creativecommons.org/licenses/by/3.0/">(CC-BY)</a></p>
 			</footer>
 		</div>
-		
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
 		<script src="/js/clamp.min.js"></script>
