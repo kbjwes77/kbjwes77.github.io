@@ -19,23 +19,22 @@
 			window.onload = function()
 				{
 				var feed_ind = 1;
-				function getQueryVariable()
+				
+				var query = window.location.search.substring(1);
+				console.log(query);
+				
+				var vars = query.split("&");
+				for (var i=0;i<vars.length;i++)
 					{
-					var query = window.location.search.substring(1);
-					console.log(query);
-					var vars = query.split("&");
-					for (var i=0;i<vars.length;i++)
+					var pair = vars[i].split("=");
+					if(pair[0] == "id")
 						{
-						var pair = vars[i].split("=");
-						if(pair[0] == "id")
-							{
-							feed_ind = parseInt(pair[1]);
-							console.log(feed_ind);
-							return;
-							}
-						}
-					return;
-					}
+						feed_ind = parseInt(pair[1]);
+						break;
+						};
+					};
+				
+				console.log(feed_ind);
 				
 				var feed_min = 1;
 				var feed_max = 3;
