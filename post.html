@@ -22,6 +22,7 @@
 				function getQueryVariable()
 					{
 					var query = window.location.search.substring(1);
+					console.log(query);
 					var vars = query.split("&");
 					for (var i=0;i<vars.length;i++)
 						{
@@ -29,10 +30,10 @@
 						if(pair[0] == "id")
 							{
 							feed_ind = parseInt(pair[1]);
+							console.log(feed_ind);
 							return;
 							}
 						}
-					alert(query);
 					return;
 					}
 				
