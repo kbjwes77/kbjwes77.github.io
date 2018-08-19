@@ -18,7 +18,7 @@
 		<script src="/js/urlQuery.js"></script>
 		<script src="/js/loadfeed.js"></script>
 		<script>
-			window.onLoad = function()
+			window.onload = function()
 				{
 				var result = urlQuery("id");
 				if (result == "")
@@ -29,8 +29,8 @@
 					{
 					var postID = parseInt(result);
 					};
-				loadfeed(postID,postID,1,false);
-				}
+				var feed = loadfeed(postID,postID,1,true);
+				};
 		</script>
 		
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -66,9 +66,5 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
 		<script src="/js/clamp.min.js"></script>
-		
-		<!-- LOAD LATEST FEED POSTS -->
-		<script src="/js/urlQuery.js"></script>
-		<script src="/js/loadfeed.js"></script>
 	</body>
 </html>
