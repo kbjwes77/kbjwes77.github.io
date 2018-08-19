@@ -27,6 +27,6 @@ function loadfeed(feed_min,feed_max,feed_len,clamp)
 					};
 				req.send();
 				};
-			})(min+i,i+1) // closure so variables aren't changed inside the loop from outside (stupid ASYNC)
+			})(feed_min+i,i+1) // closure so variables aren't changed inside the loop from outside (stupid ASYNC)
 		};
 	};
