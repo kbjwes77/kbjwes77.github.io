@@ -14,36 +14,11 @@
 			gtag('js',new Date());	gtag('config','UA-110781447-1');
 		</script>
 		
-		<!-- LOAD LATEST FEED POSTS -->
 		<script>
-			window.onload = function()
+			window.onLoad = function()
 				{
-				var feed_min = 1;
-				var feed_max = 3;
-				var feed_len = 3;
-				var req;
-				
-				for (var i = 0; i < feed_len; i++)
-					{
-					(function(feed_ind,post_div) // need function closure
-						{
-						if (feed_ind >= feed_min && feed_ind <= feed_max)
-							{
-							req = new XMLHttpRequest();
-							req.open("GET","/feed/post" + feed_ind + "/post.html", true);
-							req.onreadystatechange= function()
-								{
-								if (this.readyState!==4) return;
-								if (this.status!==200) return;
-								document.getElementById("post-" + post_div).innerHTML = this.responseText;
-								
-								$clamp(document.getElementById("post-" + post_div + "-text"), {clamp: 3});
-								};
-							req.send();
-							};
-						})(feed_min+i,i+1) // closure so variables aren't changed inside the loop from outside (stupid ASYNC)
-					};
-				};
+				loadfeed(1,3,3,true);
+				}
 		</script>
 
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -87,5 +62,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
 		<script src="/js/clamp.min.js"></script>
+		
+		<!-- LOAD LATEST FEED POSTS -->
+		<script> src="/js/urlQuery.js"</script>
+		<script> src="/js/loadfeed.js"</script>
 	</body>
 </html>

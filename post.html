@@ -14,43 +14,20 @@
 			gtag('js',new Date());	gtag('config','UA-110781447-1');
 		</script>
 		
-		<!-- LOAD LATEST FEED POSTS -->
 		<script>
-			window.onload = function()
+			window.onLoad = function()
 				{
-				var feed_ind = 1;
-				var feed_min = 1;
-				var feed_max = 3;
-				var req;
-				
-				var query = window.location.search.substring(1);
-				var vars = query.split("&");
-				for (var i=0;i<vars.length;i++)
+				var result = urlQuery("id");
+				if (result == "")
 					{
-					var pair = vars[i].split("=");
-					if(pair[0] == "id")
-						{
-						feed_ind = parseInt(pair[1]);
-						break;
-						};
+					var postID = 1;
 					};
-				
-				if (feed_ind >= feed_min && feed_ind <= feed_max)
+				else
 					{
-					req = new XMLHttpRequest();
-					req.open("GET","/feed/post" + feed_ind + "/post.html", true);
-					req.onreadystatechange= function()
-						{
-						if (this.readyState!==4) return;
-						if (this.status!==200) return;
-						document.getElementById("post").innerHTML = this.responseText;
-						
-						var element = document.getElementById("read-more-" + feed_ind);
-						element.parentNode.removeChild(element);
-						};
-					req.send();
+					var postID = parseInt(result);
 					};
-				};
+				loadfeed(postID,postID,1,false);
+				}
 		</script>
 		
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -86,5 +63,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
 		<script src="/js/clamp.min.js"></script>
+		
+		<!-- LOAD LATEST FEED POSTS -->
+		<script> src="/js/urlQuery.js"</script>
+		<script> src="/js/loadfeed.js"</script>
 	</body>
 </html>
