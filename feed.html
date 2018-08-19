@@ -36,6 +36,9 @@
 								if (this.readyState!==4) return;
 								if (this.status!==200) return;
 								document.getElementById("post-" + post_div).innerHTML = this.responseText;
+								
+								var element = document.getElementById("read-more-" + feed_ind);
+								element.parentNode.removeChild(element);
 								};
 							req.send();
 							};

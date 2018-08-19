@@ -19,10 +19,11 @@
 			window.onload = function()
 				{
 				var feed_ind = 1;
+				var feed_min = 1;
+				var feed_max = 3;
+				var req;
 				
 				var query = window.location.search.substring(1);
-				console.log(query);
-				
 				var vars = query.split("&");
 				for (var i=0;i<vars.length;i++)
 					{
@@ -34,12 +35,6 @@
 						};
 					};
 				
-				console.log(feed_ind);
-				
-				var feed_min = 1;
-				var feed_max = 3;
-				var req;
-				
 				if (feed_ind >= feed_min && feed_ind <= feed_max)
 					{
 					req = new XMLHttpRequest();
@@ -49,6 +44,9 @@
 						if (this.readyState!==4) return;
 						if (this.status!==200) return;
 						document.getElementById("post").innerHTML = this.responseText;
+						
+						var element = document.getElementById("read-more-" + feed_ind);
+						element.parentNode.removeChild(element);
 						};
 					req.send();
 					};
