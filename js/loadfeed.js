@@ -18,7 +18,7 @@ function loadfeed(feed_min,feed_max,feed_len,clamp)
 					if (clamp)
 						{
 						$clamp(document.getElementById("post-" + post_div + "-text"), {clamp: 3});
-						};
+						}
 					else
 						{
 						var element = document.getElementById("read-more-" + feed_ind);
