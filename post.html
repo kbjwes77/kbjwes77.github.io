@@ -15,6 +15,7 @@
 		</script>
 		
 		<!-- LOAD LATEST FEED POSTS -->
+		<script src="/js/clamp.min.js"></script>
 		<script src="/js/urlQuery.js"></script>
 		<script src="/js/loadfeed.js"></script>
 		<script>
@@ -26,8 +27,6 @@
 					{
 					postID = parseInt(result);
 					};
-				console.log(result);
-				console.log(postID);
 				return(loadfeed(postID,postID,1,false));
 				};
 		</script>
@@ -64,6 +63,5 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
-		<script src="/js/clamp.min.js"></script>
 	</body>
 </html>
