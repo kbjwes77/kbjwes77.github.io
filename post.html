@@ -21,13 +21,10 @@
 			window.onload = function()
 				{
 				var result = urlQuery("id");
-				if (result == "")
+				var postID = 1;
+				if (result != "")
 					{
-					var postID = 1;
-					}
-				else
-					{
-					var postID = parseInt(result);
+					postID = parseInt(result);
 					};
 				var feed = loadfeed(postID,postID,1,true);
 				};
