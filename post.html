@@ -25,7 +25,8 @@
 					{
 					postID = parseInt(result);
 					};
-				return(loadfeed(postID,postID,1,false));
+				loadfeed(postID,postID,1,false);
+				loadtemp("/templates/footer.html","footer");
 				};
 		</script>
 		
