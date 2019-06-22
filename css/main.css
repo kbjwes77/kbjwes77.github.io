@@ -21,22 +21,22 @@ hr {
 	width: 100%;
 }
 h1, h2, h3, h4, h5 {
-	color: #CCC;
+	color: #DDD;
 }
 p {
-	color: #888;
+	color: #999;
 }
 a {
-	color: #1DE9B6;
+	color: #6526F9;
 }
 a:hover, a:active {
-	color: #64FFDA;
+	color: #7B4FF9;
 }
 a:visited {
 	color: #AAA;
 }
 li {
-	color: #888;
+	color: #999;
 }
 
 /* Body */
@@ -47,7 +47,7 @@ li {
     margin: 40px 0 0;
 }
 .page-header h1 {
-	color: #CCC;
+	color: #DDD;
 	}
 .page-header h1:hover {
 	color: #1DE9B6;
@@ -61,7 +61,7 @@ li {
 .nav-tabs>li>a {
     margin-right: 2px;
     line-height: 1.42857143;
-	color: #CCC;
+	color: #DDD;
     border: none;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
@@ -86,7 +86,7 @@ li {
 	background-color: #424242;
 }
 .panel-body a {
-	color: #CCC;
+	color: #DDD;
 }
 
 /* Previews */
@@ -104,10 +104,10 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	border-radius: 4px;
 }
 .caption h1, h2, h3, h4, h5 {
-	margin: 0 0 5px;
+	margin: 5px 0 5px 0;
 }
 .caption p {
-	margin: 0 0 5px;
+	margin: 5px 0 5px 0;
 }
 
 /* Buttons */
@@ -118,20 +118,23 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	color: #FFF;
 }
 .btn-default {
-    background: #AAA;
+    background: #999;
 	color: #FFF;
+	box-shadow: 0 3px 0 0 #606060;
 	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
-	box-shadow: 0 3px 0 0 #888;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-    background: #CCC;
+    background: #DDD;
+	color: #424242;
+	box-shadow: 0 3px 0 0 #999;
 }
 .btn-success {
-    background: #15A883;
+    background: #7B4FF9;
 	color: #FFF;
+	box-shadow: 0 3px 0 0 #620EE3;
 	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
-	box-shadow: 0 3px 0 0 #0F7A5F;
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
     background: #00BFA5;
+	box-shadow: 0 3px 0 0 #620EE3;
 }
