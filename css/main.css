@@ -123,7 +123,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	box-shadow: 0 3px 0 0 #606060;
 	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 }
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-default:active:hover {
     background: #DDD;
 	color: #424242;
 	box-shadow: 0 3px 0 0 #999;
@@ -134,8 +134,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	box-shadow: 0 3px 0 0 #620EE3;
 	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 }
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success:active:hover {
     background: #B187FA;
-	color: #424242;
+	color: #4B1C87;
 	box-shadow: 0 3px 0 0 #7B4FF9;
 }
