@@ -103,6 +103,12 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	border: 5px solid #424242;
 	border-radius: 4px;
 }
+.caption h1, h2, h3, h4, h5 {
+	margin: 0 0 5px;
+}
+.caption p {
+	margin: 0 0 5px;
+}
 
 /* Buttons */
 
