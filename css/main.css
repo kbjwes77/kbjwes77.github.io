@@ -109,7 +109,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .caption p {
 	margin: 5px 0 5px 0;
 }
-.caption a, a:hover, a:active, a:active:hover {
+.caption a, a:visted {
 	color: #606060;
 	text-shadow: 0 2px 0 rgba(0,0,0,.1);
 }
