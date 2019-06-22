@@ -27,10 +27,10 @@ p {
 	color: #999;
 }
 a {
-	color: #6526F9;
+	color: #7B4FF9;
 }
 a:hover, a:active {
-	color: #7B4FF9;
+	color: #B187FA;
 }
 a:visited {
 	color: #AAA;
@@ -50,7 +50,7 @@ li {
 	color: #DDD;
 	}
 .page-header h1:hover {
-	color: #1DE9B6;
+	color: #B187FA;
 	}
 .page-header span {
 	font-size: 24px;
@@ -66,7 +66,7 @@ li {
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
 .nav-tabs>li>a:hover, .nav-tabs>li>a:focus, .nav>li>a:hover, .nav>li>a:focus {
-    color: #1DE9B6;
+    color: #B187FA;
     background-color: #424242;
     border: none;
 }
@@ -135,6 +135,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
-    background: #00BFA5;
-	box-shadow: 0 3px 0 0 #620EE3;
+    background: #B187FA;
+	color: #424242;
+	box-shadow: 0 3px 0 0 #7B4FF9;
 }
