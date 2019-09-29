@@ -5,7 +5,8 @@
 	src:url('/fonts/patua.woff2') format('woff2'),
 		url('/fonts/patua.woff') format('woff'),
 		url('/fonts/patua.ttf') format('truetype');
-	
+}
+@font-face {
 	font-family: 'roboto';
 	src:url('/fonts/roboto.woff2') format('woff2'),
 		url('/fonts/roboto.woff') format('woff'),
