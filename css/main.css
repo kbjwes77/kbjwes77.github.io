@@ -5,6 +5,11 @@
 	src:url('/fonts/patua.woff2') format('woff2'),
 		url('/fonts/patua.woff') format('woff'),
 		url('/fonts/patua.ttf') format('truetype');
+	
+	font-family: 'roboto';
+	src:url('/fonts/roboto.woff2') format('woff2'),
+		url('/fonts/roboto.woff') format('woff'),
+		url('/fonts/roboto.ttf') format('truetype');
 }
 
 /* Default Elements */
@@ -83,6 +88,7 @@ li {
 	box-shadow: 0 4px 8px #222;
 }
 .jumbotron p {
+	font-family: 'roboto', sans-serif;
 	color: #888;
 }
 .panel {
@@ -92,6 +98,10 @@ li {
 .panel-body {
 	padding: 32px;
 	background-color: #424242;
+}
+.panel-body p {
+	font-family: 'roboto', sans-serif;
+	color: #888;
 }
 .panel-body a {
 	color: #DDD;
@@ -116,14 +126,17 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 .caption p {
 	margin: 5px 0 5px 0;
+	font-family: 'roboto', sans-serif;
 	color: #888;
 }
-.caption a, a:visted {
+.caption a {
+	font-family: 'roboto', sans-serif;
 	color: #606060;
 	text-shadow: 0 2px 0 rgba(0,0,0,.1);
 }
 .caption a:hover, a:active, a:active:hover {
 	color: #999;
+	text-shadow: none;
 }
 
 /* Buttons */
