@@ -83,7 +83,7 @@ li {
 	box-shadow: 0 4px 8px #222;
 }
 .jumbotron p {
-	color: #999;
+	color: #888;
 }
 .panel {
 	border: none;
@@ -116,6 +116,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 .caption p {
 	margin: 5px 0 5px 0;
+	color: #888;
 }
 .caption a, a:visted {
 	color: #606060;
