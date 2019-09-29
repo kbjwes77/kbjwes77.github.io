@@ -23,8 +23,11 @@ hr {
 h1, h2, h3, h4, h5 {
 	color: #DDD;
 }
-p {
+h1 small, h2 small, h3 small, h4 small, h5 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small {
 	color: #999;
+}
+p {
+	color: #777;
 }
 a {
 	color: #7B4FF9;
@@ -74,8 +77,13 @@ li {
 	background-color: #424242;
 }
 .jumbotron {
+	padding-top: 16px;
+	padding-bottom: 16px;
     background-color: #424242;
 	box-shadow: 0 4px 8px #222;
+}
+.jumbotron p {
+	color: #999;
 }
 .panel {
 	border: none;
