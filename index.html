@@ -10,10 +10,11 @@
 		<script src="/js/clamp.min.js"></script>
 		<script src="/js/kb.js"></script>
 		<script>
+			var pageType = "home";
 			window.onload = function()
 				{
-				loadfeed(4,6,3,true);
-				loadtemp("/templates/footer.html","footer");
+				loadTemplate("/templates/header.html","header");
+				loadTemplate("/templates/footer.html","footer");
 				};
 		</script>
 
@@ -23,16 +24,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="page-header">
-				<h1>kbjwes77.github.io</h1>
-				<ul class="nav nav-tabs">
-					<li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-					<li role="presentation"><a href="/gamedev.html"><span class="glyphicon glyphicon-knight" aria-hidden="true"></span></a></li>
-					<li role="presentation"><a href="/music.html"><span class="glyphicon glyphicon-music" aria-hidden="true"></span></a></li>
-					<li role="presentation"><a href="/feed.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
-					<li role="presentation"><a href="/contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
-				</ul>
-			</div>
+			<div id="header"></div>
 		</div>
 		<div class="jumbotron">
 			<div class="container">
@@ -42,9 +34,11 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div id="post-3"></div>
-				<div id="post-2"></div>
-				<div id="post-1"></div>
+				<div class="col-xs-6 col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLGZ-XSKVIjxxO3eFD7yjWzDWDFLg3QG7G" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
 			</div>
 		</div>
 		<br>
