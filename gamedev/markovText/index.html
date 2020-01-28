@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Markov Chain Text</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script src="/js/clamp.min.js"></script>
+		<script src="/js/kb.js"></script>
+		<script>
+			var pageType = "game";
+			window.onload = function()
+				{
+				loadTemplate("/templates/header.html","header");
+				loadTemplate("/templates/footer.html","footer");
+				};
+		</script>
+
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+    <body>
+        <div class="container">
+            <div id="header"></div>
+            <ol class="breadcrumb">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/gamedev.html">Gamedev</a></li>
+				<li class="active">Markov Chain Text</li>
+			</ol>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <h2>Markov Chain Text</h2>
+                <p>Generate plausible strings of random text using Markov Chains</p>
+				<a type="button" class="btn btn-success" href="/gamedev/markovText/demo/" target="_blank">Live Demo</a>
+				<a type="button" class="btn btn-default" href="/gamedev/markovText/markovText-windows.zip" target="_blank">Windows</a>
+                <a type="button" class="btn btn-default" href="/gamedev/markovText/markovText-source.gmz" target="_blank">Source</a>
+            </div>
+        </div>
+		<div class="container">
+			<h1><small>Screenshots</small></h1>
+			<div class="row">
+				<div class="col-xs-6 col-md-4">
+					<a href="/gamedev/markovText/thumb1.png" class="thumbnail">
+						<img src="/gamedev/markovText/thumb1.png" alt="...">
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<a href="/gamedev/markovText/thumb2.png" class="thumbnail">
+						<img src="/gamedev/markovText/thumb2.png" alt="...">
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<a href="/gamedev/markovText/thumb3.png" class="thumbnail">
+						<img src="/gamedev/markovText/thumb3.png" alt="...">
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+        <div class="container" id="footer"></div>
+		
+		<script src="/js/jquery-3.3.1.slim.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+    </body>
+</html>
