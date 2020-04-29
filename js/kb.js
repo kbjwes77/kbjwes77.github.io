@@ -30,6 +30,9 @@ function loadTemplate(file,element)
 			case "music":
 				file = "/templates/header-music.html";
 				break;
+			case "art":
+				file = "/templates/header-art.html";
+				break;
 			case "contact":
 				file = "/templates/header-contact.html";
 				break;
