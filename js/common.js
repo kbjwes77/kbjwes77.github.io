@@ -56,4 +56,7 @@ const load_template = async function(file,element)
 window.onload = () => {
 	set_header();
 	set_footer();
+
+	// enable tooltips
+	$('[data-toggle="tooltip"]').tooltip();
 	}
