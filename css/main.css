@@ -143,8 +143,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	text-shadow: none;
 }
 .art {
-	max-width:20rem;
-	max-height:20rem;
+	max-width:24rem;
 	}
 
 /* Buttons */
