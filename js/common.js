@@ -41,10 +41,8 @@ const set_footer = function() {
 // load template into element
 const load_template = async function(file,element)
 	{
-	let file = `/templates/${file}.html`;
-	let html = ``;
 	try {
-		html = await fetch(file);
+		let html = await fetch(file);
 		document.getElementById(element).innerHTML = html;
 		}
 	catch (error)
