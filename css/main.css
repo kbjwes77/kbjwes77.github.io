@@ -142,6 +142,10 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	color: #999;
 	text-shadow: none;
 }
+.art {
+	max-width:20rem;
+	max-height:20rem;
+	}
 
 /* Buttons */
 
