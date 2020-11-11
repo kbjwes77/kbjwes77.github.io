@@ -142,6 +142,10 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	color: #999;
 	text-shadow: none;
 }
+.art-md {
+	max-width:512px;
+	margin:0 auto;
+}
 
 /* Buttons */
 
